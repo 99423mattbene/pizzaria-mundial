@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-
+import { Link } from "react-router-dom"
 import api from "../../services/api"
 
 import MenuFuncinario from '../MenuFuncionario/MenuFuncionario'
@@ -37,8 +37,6 @@ const ListarProduto = () => {
 
   }, [])
 
-   /*
-
     const arrayProdutos = [
         {
             id: 1,
@@ -58,7 +56,7 @@ const ListarProduto = () => {
             precoVenda: 44.90,
             descricao: "Pizza de frango com catupiry"
         }
-    ] */
+    ]
 
     return (
 
@@ -77,7 +75,7 @@ const ListarProduto = () => {
           </thead> 
           <tbody> 
           
-          { produtos.map((produto) => ( 
+          {produtos.map((produto) => ( 
                    <tr key={produto.id}> 
                 <td style={{ fontSize: "13px" }}>{produto.nome}</td> 
                 <td style={{ fontSize: "13px" }}> 
